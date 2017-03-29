@@ -19,9 +19,13 @@ swiftenv local <new swift build>
 swift build -c release --build-path=newBuild
 ```
 
-2. Get the driver scripts
+2. Get the driver scripts and prereqs
 ```
 git clone https://github.com/djones6/Kitura-Bench ~/kiturabench
+```
+For Linux, you need these packages:
+```
+sudo apt-get install numactl sysstat
 ```
 
 3. Get the 'wrk' tool (my fork, 'interval' branch adds the -i option to provide periodic throughput measurements)
